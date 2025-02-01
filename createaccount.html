@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+    <!-- Κωδικοποίηση εγγράφου -->
+    <meta charset="utf-8" />
+
+    <!-- Keywords & info για τον browser -->
+    <meta name="description" content="Αγορές-Ενοικιάσεις-Επισκευές οχημάτων">
+    <meta name="keywords" content="Σύνδεση, Εγγραφή, Μοτοσυκλέτες, Αγορά, Leasing, Επισκευές, Ερωτηματολόγιο">
+
+    <!-- Ένωση με css αρχείο -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Ένωση με javascript αρχείο -->
+    <script src="validation.js"></script>
+
+    <!-- Τίτλος για τον browser -->
+    <title> Log-in/Sign-up </title>
+</head>
+
+<body class="body">
+
+    <header class="header">
+        <h1>Vehicle.gr</h1>
+        <a href="index.html"><img src="Images/logo.jpg" alt="Λογότυπο της Ιστοσελίδας" width="50%" height="auto"></a>
+    </header>
+    <menu class="main-menu">
+        <a href="index.html">Αρχική</a>
+        <a href="categories.html">Κατηγορίες</a>
+        <a href="aboutus.html">Ποιοι είμαστε?</a>
+        <a href="contactus.html">Επικοινωνία</a>
+        <a class="active" href="createaccount.html">Σύνδεση/Εγγραφή</a>
+    </menu>
+
+    <main class="main">
+        <h1>Σύνδεση / Εγγραφή</h1>
+        <div class="grid-container-createaccount">
+            <div class="form">
+            <details>
+                <summary>Σύνδεση</summary>
+                    <fieldset>
+                        <legend>Σύνδεση</legend>
+                        <div class="form-group">
+                            <label for="username">Όνομα Χρήστη:</label><br>
+                            <input type="text" id="username" name="username" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Κωδικός Πρόσβασης:</label><br>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                    </fieldset>
+                    <br>
+                    <button type="submit">Σύνδεση</button>
+                    <br>
+                    <img src="Images/car-index.jpg">
+                </div>
+            </details>
+
+            <div class="form">
+                <details>
+                    <summary>Εγγραφή</summary>
+                    <fieldset>
+                        <legend>Προσωπικά Στοιχεία</legend>
+
+                        <div class="form-group">
+                            <label for="fullName">Ονοματεπώνυμο:</label><br>
+                            <input type="text" id="fullName" name="fullName" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email:</label><br>
+                            <input type="email" id="email" name="email" placeholder="Π.χ. youremail@mail.gr" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address">Διεύθυνση Κατοικίας:</label><br>
+                            <input type="text" id="address" name="address" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="birthdate">Ημερομηνία Γέννησης:</label><br>
+                            <input type="date" id="birthdate" name="birthdate" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Τηλέφωνο Επικοινωνίας:</label><br>
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Π.χ. 2101234567" required>
+                        </div>
+                    </fieldset>
+
+                    <summary>Στοιχεία Ταυτοποίησης</summary>
+                    <fieldset>
+                        <legend>Στοιχεία Ταυτοποίησης</legend>
+
+                        <div class="form-group">
+                            <label for="newUsername">Νέο Όνομα Χρήστη:</label><br>
+                            <input type="text" id="newUsername" name="newUsername" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="newPassword">Νέος Κωδικός Πρόσβασης:</label><br>
+                            <input type="password" id="newPassword" name="newPassword" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="confirmPassword">Επιβεβαίωση Κωδικού:</label><br>
+                            <input type="password" id="confirmPassword" name="confirmPassword" required>
+                        </div>
+                    </fieldset>
+
+                    <summary>Επιλογές Επικοινωνίας</summary>
+                    <fieldset>
+                        <legend>Επιλογές Επικοινωνίας</legend>
+
+                        <div class="form-group">
+                            <label>Επιλογές Επικοινωνίας:</label>
+                            <div>
+                                <input type="checkbox" id="sms" name="contactMethod" value="sms">
+                                <label for="sms">SMS</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" id="emailContact" name="contactMethod" value="email">
+                                <label for="emailContact">Email</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" id="viber" name="contactMethod" value="viber">
+                                <label for="viber">Viber</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" id="whatsapp" name="contactMethod" value="whatsapp">
+                                <label for="whatsapp">WhatsApp</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <br>
+                    <button type="submit">Εγγραφή</button>
+                </details>
+            </div>
+
+            <div class="form">
+                <details>
+                    <summary>Ερωτηματολόγιο</summary>
+                    <fieldset>
+                        <legend>Ερωτηματολόγιο Αγοραστικού Προφίλ</legend>
+
+                        <div class="form-group">
+                            <label for="adTypes">Ποιον τύπο αγγελιών συνήθως αναζητείτε;</label><br>
+                            <select id="adTypes" name="adTypes" required>
+                                <option value="Default">---Επιλογή---</option>
+                                <option value="cars">Αυτοκίνητα</option>
+                                <option value="motorcycles">Μοτοσυκλέτες</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="serviceTitle">Τι υπηρεσία μας θα θέλατε; (πχ. Αγορά, Leasing, Επισκευή)</label><br>
+                            <input type="text" id="serviceTitle" name="serviceTitle" required>
+                            <datalist id="vehicleTypes-options">
+                                <option value="Αγορά">
+                                <option value="Leasing">
+                                <option value="Επισκευή">
+                            </datalist>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="vehicleTypes">Ποιους τύπους οχημάτων χρησιμοποιείτε συνήθως;</label><br>
+                            <input type="text" id="vehicleTypes" name="vehicleTypes" required>
+                            <datalist id="vehicleTypes-options">
+                                <option value="Αυτοκίνητα">
+                                <option value="Μοτοσυκλέτες">
+                            </datalist>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="vehicleCost">Ποιο είναι το χρηματικό ποσό που θα θέλατενα επενδύσετε;</label><br>
+                            <input type="text" id="vehicleCost" name="vehicleCost" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="condition">Θα προτιμούσατε να είναι καινούριο ή μεταχειρισμένο;</label><br>
+                            <select id="condition" name="condition" required>
+                                <option value="Default">---Επιλογή---</option>
+                                <option value="cars">Καινούριο</option>
+                                <option value="motorcycles">Μεταχειρισμένο</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <br>
+                    <button type="submit">Υποβολή</button>
+                </details>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="link-editor">
+            <p>
+                <strong>Find us on:</strong> <br>
+                <a href="#"> Facebook </a> <br>
+                <a href="#"> Instagram </a> <br>
+            </p>
+        </div>
+        <p>
+            <strong>&copy; 2023 Vehicle.gr</strong>
+        </p>
+    </footer>
+
+</body>
+
+</html>

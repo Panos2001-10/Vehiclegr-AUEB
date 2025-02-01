@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+    <!-- Κωδικοποίηση εγγράφου -->
+    <meta charset="utf-8" />
+
+    <!-- Keywords & info για τον browser -->
+    <meta name="description" content="Αγορές-Ενοικιάσεις-Επισκευές οχημάτων">
+    <meta name="keywords"
+        content="Αυτοκίνητα, Μοτοσυκλέτες, Αγορά, Leasing, Επισκευές, Ερωτήσεις, Προβλήματα, Επικοινωνία">
+
+    <!-- Ένωση με css αρχείο -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Τίτλος για τον browser -->
+    <title>Contact Us</title>
+</head>
+
+<body class="body">
+    <!-- Τίτλος και μενού σελίδας -->
+    <header class="header">
+        <h1>Vehicle.gr</h1>
+        <a href="index.html"><img src="Images/logo.jpg" alt="Λογότυπο της Ιστοσελίδας" width="50%"
+            height="auto"></a>
+        </header>
+        <menu class="main-menu">
+            <a href="index.html">Αρχική</a>
+            <a href="categories.html">Κατηγορίες</a>
+            <a href="aboutus.html">Ποιοι είμαστε?</a>
+            <a class="active" href="contactus.html">Επικοινωνία</a>
+            <a href="createaccount.html">Συνδεση/Εγγραφή</a>
+        </menu>
+        
+        <div class="grid-container-contactus">
+            <main class="main">
+                <div class="contactus-description">
+                    <h2>Για οποιαδήποτε απορία μην διστάσετε να επικοινωνήσετε μαζί μας!</h2>
+                    <p>
+                        Καλώς ήρθατε στη σελίδα επικοινωνίας του Vehicle.gr! Εδώ στο Vehicle.gr, εκτιμούμε τη σχέση μας με τους χρήστες μας και προσπαθούμε να παρέχουμε την καλύτερη δυνατή εξυπηρέτηση.
+                        Αν έχετε οποιαδήποτε ερώτηση, σχόλιο ή πρόταση, μη διστάσετε να επικοινωνήσετε μαζί μας.
+                        Οι εκπρόσωποί μας είναι εδώ για να σας βοηθήσουν. Συμπληρώστε απλά τη φόρμα επικοινωνίας παρακάτω με τα στοιχεία σας και το μήνυμά σας, και θα σας απαντήσουμε το συντομότερο δυνατό.
+                    </p>
+                </div>
+
+                <div class="form">
+                    <form action="/register-user" method="POST" enctype="multipart/form-data" name="Form">
+                        <h3><u>Φόρμα Επικοινωνίας</u></h3>
+
+                        <fieldset>
+                            <legend>Προσωπικά Στοιχεία</legend>
+                            <label for="myName">Όνομα:</label><br>
+                            <input type="text" required placeholder="First name"><br>
+
+                            <label for="myLastName">Επίθετο:</label><br>
+                            <input type="text" required placeholder="Last name" label><br>
+
+                            <label for="myEmail">Email Address:</label><br>
+                            <input type="email" required placeholder="E-mail address"><br>
+
+                            <label for="myNumber">Τηλέφωνο:</label><br>
+                            <input type="tel" name="number" required id="myNumber" required placeholder="Phone number"><br>
+
+                            <label for="TicketNumber">Αριθμος Αγγελίας:</label><br>
+                            <input type="text" required placeholder="Listing number"><br>
+
+                            <label for="MyTicket">Περιγραφή Προβλήματος:</label><br>
+                            <textarea rows="4" cols="50" placeholder="Describe your problem"></textarea><br>
+                        </fieldset>
+                        <br>
+                        <button type="submit">Υποβολή</button>
+                    </form>
+                </div>
+
+                <div class="contactus-image">
+                    <img src="Images/contact-us.jpg">
+                </div>
+            </main>
+        </div>
+        <footer class="footer">
+            <div class="link-editor">
+                <p>
+                    <strong>Find us on:</strong> <br>
+                    <a href="#"> Facebook </a> <br>
+                    <a href="#"> Instagram </a> <br>
+                </p>
+            </div>
+            <p>
+                <strong>&copy; 2023 Vehicle.gr</strong>
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
